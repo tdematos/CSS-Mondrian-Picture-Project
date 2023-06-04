@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    */
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        display: grid;
+        background-color: #000;
+        gap: 9px;
+        grid-template-rows: 414px 130px 155px 20px;
+        grid-template-columns: 320px 198px 153px 50px;
+        max-width: 748px;
+        height: 71.5vh;
+      }
+
+      .cell {
+        background-color: #f0f1ec;
+      }
+
+      .one {
+        background-color: #e72f24;
+      }
+
+      .two {
+        grid-column: span 3;
+      }
+
+      .three {
+        grid-row: span 2;
+      }
+
+      .four {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      .five {
+        background-color: #004592;
+        grid-column: 130px;
+        border-bottom: solid 10px black;
+      }
+
+      .six {
+        grid-row: span 2;
+      }
+
+      .eight {
+        background-color: #f9d01e;
+      }
+
+      .nine {
+        background-color: #004592;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="cell one"></div>
+      <div class="cell two"></div>
+      <div class="cell three"></div>
+      <div class="cell four"></div>
+      <div class="cell five"></div>
+      <div class="cell six"></div>
+      <div class="cell seven"></div>
+      <div class="cell eight"></div>
+      <div class="cell nine"></div>
+    </div>
+  </body>
+</html>
